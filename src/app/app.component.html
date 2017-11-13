@@ -1,0 +1,28 @@
+<html lang="fr">
+  <div style="text-align:center">
+    <a href="https://coperbee.fr">
+      <img src="/assets/images/logobee.png" width='1000px' />
+    </a>
+    <h1>
+      {{title}}
+    </h1>
+  </div>
+  <div>
+    <h2 [style.color]="'#999999'">Bienvenue dans l'outil de gestion des projets R&D de CoperBee
+    </h2>
+  </div>
+  <div>
+    <label>Ajouter un projet:
+      <input #projectName placeholder="titre du projet"/>
+    </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(projectName.value); projectName.value=''">
+      Ajouter
+    </button>
+  </div>
+  <nav>
+    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    <a routerLink="/projects" routerLinkActive="active">Voir les projets</a>
+  </nav>
+  <router-outlet></router-outlet>
+</html>

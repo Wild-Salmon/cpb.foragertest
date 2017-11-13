@@ -1,0 +1,25 @@
+<div *ngIf="project">
+    
+      <h2>Détails du projet {{ project.name | uppercase }}</h2>
+      <div align="center">
+        <label>Titre
+          <input [(ngModel)]="project.name" placeholder="Titre du projet"/>
+        </label>
+      </div>
+      <div align="center">
+        <video width="680" height="480" controls>
+          <source src="../assets/videos/{{project.video}}" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </div>
+      <div align="center">
+        <label>
+          Description
+        </label>
+        <div class="label-desc">
+          <label>{{project.description}}</label>
+          </div>
+      </div>
+      <button (click)="goBack()">Retour</button>
+      <button (click)="save()">Enregistrer</button>
+</div>

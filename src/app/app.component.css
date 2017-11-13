@@ -1,0 +1,36 @@
+/* AppComponent's private CSS styles */
+h1 {
+  font-size: 5em;
+  margin-bottom: 0;
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+  padding: 10px;
+  
+}
+h2 {
+  font-size: 2em;
+  margin-top: 10;
+  padding-top: 0;
+  font-style: italic;
+  font-family: 'Ubuntu', sans-serif;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #666666;
+  font-family: 'Ubuntu', sans-serif;
+}
+nav a:hover {
+  color: #e5a903;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #e55603;
+  background-color: rgb(201, 201, 201);
+}
